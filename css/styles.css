@@ -1,0 +1,83 @@
+:root {
+  --primary: #78bcc4;
+  --bg: #f7f8f3;
+  --text: #002c3e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: #002c3e;
+}
+
+.container {
+  border: 0.3rem solid var(--primary);
+  border-radius: 1rem;
+  width: 60%;
+  height: 80%;
+  margin: 5rem auto;
+  line-height: 2rem;
+  display: flex;
+}
+
+.container .content {
+  width: 60%;
+  margin: 3rem 0rem 5rem 2rem;
+}
+
+.container .content input {
+  border: 0.1rem solid var(--primary);
+}
+
+.container .content button {
+  margin: auto;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  color: var(--text);
+  background-color: var(--primary);
+}
+
+.container .content button:hover {
+  color: var(--primary);
+  background-color: var(--text);
+  cursor: pointer;
+}
+
+.container .suhu {
+  width: 40%;
+  margin-right: 0;
+  text-align: center;
+  background-color: var(--primary);
+}
+
+.container .suhu h1 {
+  color: var(--bg);
+  text-align: center;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.celcius,
+.fahrenheit {
+  padding: 1rem;
+}
+.celcius div {
+  display: block;
+}
+
+.fahrenheit div {
+  display: none;
+}

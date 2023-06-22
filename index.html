@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator suhu</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="title">
+          <h1>Enter Temprature</h1>
+        </div>
+
+        <div class="celcius">
+          <h3>Celcius</h3>
+          <input type="number" value="0" />
+          <br />
+          <div class="action">
+            <button onclick="CtoF()">Konversi</button>
+            <button onclick="reset()">Reset</button>
+            <button onclick="showFahrenheit()">Reverse</button>
+          </div>
+        </div>
+
+        <div class="fahrenheit">
+          <h3>Fahrenheit</h3>
+          <input type="number" value="0" />
+          <br />
+          <div class="action">
+            <button onclick="FtoC()">Konversi</button>
+            <button onclick="reset()">Reset</button>
+            <button onclick="showCelcius()">Reverse</button>
+          </div>
+        </div>
+
+        <div class="rumus">
+          <h3>Rumus</h3>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="suhu">
+        <h1></h1>
+      </div>
+    </div>
+
+    <!-- debugging -->
+    <p class="tes"></p>
+
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
